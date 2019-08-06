@@ -204,6 +204,43 @@ nav img {
 
 /*===================
 *
+* Did You Know Facts
+*
+=====================*/
+
+.facts {
+	background-color: #b6d1e0;
+  text-align: center;
+	padding: 8% 0;
+	margin-bottom: 20%;
+}
+
+.facts p {
+	max-width: 80%;
+	margin: 0 auto;
+  padding-bottom: 5%;
+}
+
+
+.fact-link {
+  text-decoration: none;
+  padding: 1.8% 2.5%;
+	color: #d2e6ef;
+	font-weight: 500;
+	background: #2583ae;
+	border: #2583ae solid 0.095rem;
+	border-radius: 0.3rem;
+}
+
+.facts a:hover {
+	color: #2583ae;
+	background: #d2e6ef;
+	padding: 1.8% 2.5%;
+  transition: .4s;
+}
+
+/*===================
+*
 * Image Grid Flexbox
 *
 =====================*/
@@ -276,7 +313,11 @@ footer img {
 
 	h2 {
 		font-size: 1.3rem;
-		padding-bottom: 8%;
+		padding-bottom: 4%;
+	}
+
+	.facts {
+		padding: 10% 0;
 	}
 
 }
@@ -319,6 +360,10 @@ footer img {
 		font-size: 1.2rem;
 	}
 
+	.fact-link {
+	  padding: 1.4% 2.1%;
+	}
+
 }
 
 /* ----------------- END 777PX MEDIA QUERY ----------------- */
@@ -328,6 +373,10 @@ footer img {
 @media (min-width: 900px) {
 	.image-grid figure {
 		width: 33.33333333%;
+	}
+
+	.fact-link {
+	  padding: 1% 2%;
 	}
 
 }
@@ -394,8 +443,13 @@ footer img {
 		font-size: 4.5rem;
 	}
 
+  .facts,
 	.page-description {
 		margin-bottom: 10%;
+	}
+
+	.facts p {
+	  padding-bottom: 2.5%;
 	}
 
 }
@@ -459,13 +513,25 @@ footer img {
 		max-width: 1210px;
 	}
 
+	.facts {
+		padding: 3% 0;
+	}
+
 	.whale-link {
 	padding-bottom: 10%;
   }
 
+	.fact-link {
+		padding: 0.5% 1%;
+	}
+
 	.whale-types {
 	  text-align: center;
 		padding-top: 3%;
+	}
+
+	.facts p {
+		padding-bottom: 1.5%;
 	}
 
 }
@@ -486,6 +552,10 @@ footer img {
 
   .page-description {
 		padding-bottom: 5%;
+	}
+
+	.facts {
+		padding: 2% 0;
 	}
 
 	.button-go {
