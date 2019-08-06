@@ -204,6 +204,24 @@ nav img {
 
 /*===================
 *
+* Image Grid Flexbox
+*
+=====================*/
+
+.image-grid img {
+	max-width: 70%;
+	padding-top: 5%;
+}
+
+.image-grid {
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 20%;
+}
+
+/*===================
+*
 * Ocean Floor
 *
 =====================*/
