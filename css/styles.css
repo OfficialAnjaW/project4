@@ -1,0 +1,502 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	color: #626566;
+	background-color: #d2e6ef;
+}
+
+h1 {
+	color: #ffffff;
+	font-size: 2.3rem;
+	padding-bottom: 5%;
+}
+
+h2 {
+	font-size: 1.8rem;
+	padding-bottom: 3%;
+	text-align: center;
+	color: #2583ae;
+}
+
+h3 {
+	color: #f16b77;
+	font-size: 1.4rem;
+}
+
+p {
+	font-size: 1.1rem;
+	line-height: 2.2rem;
+}
+
+/*===================
+*
+* Header/Navigation
+*
+=====================*/
+
+header {
+	background: #b6d1e0;
+	position: fixed;
+	width: 100%;
+	padding: 3% 0;
+	z-index:1000000;
+}
+
+nav img {
+	width: 100%;
+}
+
+.desktop-menu {
+	display: none;
+}
+
+.hamburger-logo {
+	max-width: 25%;
+	padding-left: 3%;
+}
+
+/* ----------------- HAMBURGER MENU STYLES ----------------- */
+
+.hamburger{
+  background:none;
+  position:fixed;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:2px 15px 0px 15px;
+  color:#2583ae;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:fixed;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#2583ae;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#2583ae;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#f16b77; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#d2e6ef;}
+.menu ul li a:hover {  color: #d2e6ef; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+/* ----------------- HAMBURGER MENU STYLES ----------------- */
+
+/*===================
+*
+* Hero Image Section
+*
+=====================*/
+
+.hero-index {
+  background-image: url('../images/hero-index.jpg');
+	background-position: center;
+  background-size: cover;
+  padding: 45% 0;
+  text-align: center;
+}
+
+/*===================
+*
+* Hero H1 Animation
+*
+=====================*/
+
+.ml6 {
+  position: relative;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+/*===================
+*
+* Page Description
+*
+=====================*/
+
+.page-description {
+	background-color: #b6d1e0;
+  text-align: center;
+	padding: 10% 0 15% 0;
+	margin-bottom: 20%;
+}
+
+.page-description p {
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+/*===================
+*
+* Whale Links
+*
+=====================*/
+
+.whale-types {
+  text-align: center;
+	padding-top: 5%;
+}
+
+.whale-link {
+  padding-bottom: 20%;
+}
+
+.whale-link img {
+  width: 80%;
+}
+
+.whale-link h3 {
+  width: 75%;
+  margin: 0 auto;
+  padding: 4% 0 5% 0;
+}
+
+.whale-go {
+  text-decoration: none;
+  padding: 1.8% 2.5%;
+	color: #d2e6ef;
+	font-weight: 500;
+	background: #2583ae;
+	border: #2583ae solid 0.095rem;
+	border-radius: 0.3rem;
+}
+
+.whale-link a:hover {
+	color: #2583ae;
+	background: #d2e6ef;
+	padding: 1.8% 2.5%;
+  transition: .4s;
+}
+
+/*===================
+*
+* Ocean Floor
+*
+=====================*/
+
+.oceanfloor {
+  background-image: url('../images/oceanfloor.png');
+  background-size: cover;
+	background-position: bottom;
+  padding: 5% 0;
+  text-align: center;
+}
+
+/*===================
+*
+* Footer
+*
+=====================*/
+
+footer {
+  background: #2e9973;
+  text-align: center;
+  padding: 7% 0;
+}
+
+footer p {
+	color: #ffffff;
+}
+
+footer img {
+	max-width: 45px;
+	padding: 1%;
+}
+
+/* ----------------- START 499PX MEDIA QUERY ----------------- */
+
+@media (max-width: 499px) {
+
+	header {
+		padding: 5% 0;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+		padding-bottom: 7%;
+	}
+
+	p {
+		font-size: 0.95rem;
+		line-height: 2.2rem;
+	}
+
+	h2 {
+		font-size: 1.3rem;
+		padding-bottom: 8%;
+	}
+
+}
+
+/* ----------------- END 499PX MEDIA QUERY ----------------- */
+
+/* -------------------- START 600PX MEDIA QUERY ----------------------*/
+
+@media (min-width: 600px) {
+	.image-grid figure {
+		width: 50%;
+	}
+
+}
+
+/* -------------------- END 600PX MEDIA QUERY ----------------------*/
+
+/* ----------------- START 700PX MEDIA QUERY ----------------- */
+
+@media (min-width: 700px) {
+
+	.hamburger {
+		padding-top: 1.5%;
+	}
+
+}
+
+/* ----------------- END 700PX MEDIA QUERY ----------------- */
+
+/* ----------------- START 777PX MEDIA QUERY ----------------- */
+
+@media (min-width:777px) {
+
+	h1 {
+		font-size: 3.3rem;
+	}
+
+	.button-go {
+		padding: 1.3% 2%;
+		font-size: 1.2rem;
+	}
+
+}
+
+/* ----------------- END 777PX MEDIA QUERY ----------------- */
+
+/* -------------------- START 900PX MEDIA QUERY ----------------------*/
+
+@media (min-width: 900px) {
+	.image-grid figure {
+		width: 33.33333333%;
+	}
+
+}
+
+/* -------------------- END 900PX MEDIA QUERY ----------------------*/
+
+/* ----------------- START 1060PX MEDIA QUERY ----------------- */
+
+@media (min-width: 1060px) {
+
+	.menu, .hamburger, .cross {
+	  display: none;
+  }
+
+	.hamburger-logo {
+		display: none;
+	}
+
+	header {
+		padding: 1.5% 0;
+	}
+
+	.desktop-menu {
+		display: block;
+	}
+
+	nav a:hover {
+		color: #f16b77;
+		transition: .5s;
+	}
+
+	.main-nav {
+	  display: -webkit-flex;
+	  display: flex;
+		align-items: center;
+		margin: 0 3%;
+	}
+
+	.main-nav li:first-child {
+	  margin-right: auto;
+		max-width: 250px;
+	}
+
+	.main-nav a {
+	  color: #2583ae;
+		font-weight: bold;
+		font-size: 1.5rem;
+		text-decoration: none;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		padding: 1% 3%;
+	}
+
+	header nav .active {
+		color: #f16b77;
+	}
+
+	h1 {
+		font-size: 4.5rem;
+	}
+
+	.page-description {
+		margin-bottom: 10%;
+	}
+
+}
+
+/* ----------------- END 1060PX MEDIA QUERY ----------------- */
+
+/* ----------------- START 1100PX MEDIA QUERY ----------------- */
+
+@media (min-width: 1100px) {
+
+	.whale-types {
+		display: flex;
+		justify-content: center;
+		flex-direction: row-reverse;
+	}
+
+
+  figure {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.button-go {
+		 padding: 2% 4.5%;
+	}
+
+	footer {
+		padding: 2% 0;
+	}
+
+	.image-grid {
+		padding-bottom: 10%;
+	}
+
+}
+
+/* ----------------- END 1100PX MEDIA QUERY ----------------- */
+
+/* -------------------- START 1200PX MEDIA QUERY ----------------------*/
+
+@media (min-width: 1200px) {
+
+	.image-grid figure {
+		width: 25%;
+	}
+
+}
+
+/* -------------------- END 1200PX MEDIA QUERY ----------------------*/
+
+/* ----------------- START 1300PX MEDIA QUERY ----------------- */
+
+@media (min-width: 1300px) {
+
+	.page-description {
+		padding: 5% 0 9% 0;
+		margin-bottom: 5%;
+	}
+
+	.page-description p {
+		max-width: 1210px;
+	}
+
+	.whale-link {
+	padding-bottom: 10%;
+  }
+
+	.whale-types {
+	  text-align: center;
+		padding-top: 3%;
+	}
+
+}
+
+/* ----------------- END 1300PX MEDIA QUERY ----------------- */
+
+/* ----------------- START 2000PX MEDIA QUERY ----------------- */
+
+@media (min-width: 2000px) {
+
+	h1 {
+		padding-bottom: 3%;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+	}
+
+  .page-description {
+		padding-bottom: 5%;
+	}
+
+	.button-go {
+		 padding: 1.5% 4%;
+	}
+
+}
+
+/* ----------------- END 2000PX MEDIA QUERY ----------------- */
+
+/*===================
+*
+* Index Hover Effect
+*
+=====================*/
+
+.image-hover:hover {
+    animation: spin  1s forwards linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(-180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+/*---end hover---*/
