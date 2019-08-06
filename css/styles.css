@@ -212,6 +212,7 @@ nav img {
   background-image: url('../images/oceanfloor.png');
   background-size: cover;
 	background-position: bottom;
+	background-repeat: no-repeat;
   padding: 5% 0;
   text-align: center;
 }
