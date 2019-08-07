@@ -10,7 +10,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 body {
 	font-family: 'Quicksand', sans-serif;
-	color: #626566;
+	color: #2583ae;
 	background-color: #d2e6ef;
 }
 
@@ -24,7 +24,7 @@ h2 {
 	font-size: 1.8rem;
 	padding-bottom: 3%;
 	text-align: center;
-	color: #2583ae;
+	color: #f16b77;
 }
 
 h3 {
@@ -359,6 +359,11 @@ footer img {
 		width: 50%;
 	}
 
+	.image-grid {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
 }
 
 /* -------------------- END 600PX MEDIA QUERY ----------------------*/
@@ -404,7 +409,11 @@ footer img {
 
 @media (min-width: 900px) {
 	.image-grid figure {
-		width: 33.33333333%;
+		width: 25%;
+	}
+
+	.image-grid {
+		max-width: 1200px;
 	}
 
 	.fact-link {
@@ -519,18 +528,6 @@ footer img {
 }
 
 /* ----------------- END 1100PX MEDIA QUERY ----------------- */
-
-/* -------------------- START 1200PX MEDIA QUERY ----------------------*/
-
-@media (min-width: 1200px) {
-
-	.image-grid figure {
-		width: 25%;
-	}
-
-}
-
-/* -------------------- END 1200PX MEDIA QUERY ----------------------*/
 
 /* ----------------- START 1300PX MEDIA QUERY ----------------- */
 
