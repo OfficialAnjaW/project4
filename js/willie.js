@@ -33,6 +33,7 @@ im = document.getElementById("picture");
 im.src = r_image[rand_int];
 
 //RANDOM QUOTES
+
 var williequotes = [
 "Orcas are actually dolphins. They are the largest member of the dolphin family.",
 "Orcas are highly intelligent, highly adaptable and able to communicate and coordinate hunting tactics.",

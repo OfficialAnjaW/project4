@@ -1,4 +1,5 @@
 // Wanda H2 Animation
+
 var textWrapper = document.querySelector('.ml2');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
@@ -16,6 +17,7 @@ anime.timeline({loop: false})
   });
 
 //RANDOM QUOTES
+
 var wandaquotes = [
 "Humpback whales can be found in every ocean in the world.",
 "Their Latin name is megaptera novaeangliae. It means “Big Wing of New England.”",

@@ -1,4 +1,5 @@
 // Wade H2 Animation
+
 var textWrapper = document.querySelector('.ml10 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
@@ -13,6 +14,7 @@ anime.timeline({loop: false})
   });
 
   //RANDOM QUOTES
+  
   var wadequotes = [
   "Sperm whales are constantly feeding. They can eat about 3% of their body weight daily, sometimes up to 2 tons of food!",
   "Sperm whales can dive to depths of more than 3,000 ft. They mostly dive this deep in search of prey such as squids. Sperm whales can also hold their breaths for up to 90 minutes.",
