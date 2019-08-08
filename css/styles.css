@@ -47,7 +47,7 @@ header {
 	background: #b6d1e0;
 	position: static;
 	width: 100%;
-	padding: 2% 0 1%;
+	padding: 2% 0 1% 0;
 	z-index:1000000;
 }
 
@@ -159,7 +159,7 @@ nav img {
 .page-description {
 	background-color: #b6d1e0;
   text-align: center;
-	padding: 10% 0 15% 0;
+	padding: 10% 0 13% 0;
 	margin-bottom: 20%;
 }
 
@@ -323,7 +323,12 @@ footer img {
 @media (max-width: 499px) {
 
 	header {
-		padding: 5% 0;
+		padding: 3% 0;
+	}
+
+	.page-description {
+		padding: 10% 0 11% 0;
+
 	}
 
 	h1 {
@@ -345,6 +350,11 @@ footer img {
 		padding: 10% 0;
 	}
 
+	.wade-picture,
+	.picture-random {
+		padding-bottom: 20%;
+	}
+
 }
 
 /* ----------------- END 499PX MEDIA QUERY ----------------- */
@@ -361,6 +371,19 @@ footer img {
 		margin: 0 auto;
 	}
 
+	.page-description {
+		padding: 10% 0;
+		margin-bottom: 15%;
+	}
+
+	@keyframes swim {
+	  from {
+	    transform: translateX(-600px);
+	  }
+	  to {
+	    transform: translateX(1200px);
+	  }
+	}
 
 }
 
@@ -376,6 +399,10 @@ footer img {
 
 	.hamburger-logo {
 		max-width: 100px;
+	}
+
+	.facts p {
+		max-width: 700px;
 	}
 
 }
@@ -399,9 +426,18 @@ footer img {
 	  padding: 1.4% 2.1%;
 	}
 
+	.facts a:hover {
+		padding: 1.4% 2.1%;
+	}
+
   .wade-picture,
 	.picture-random  {
 		max-width: 500px;
+	}
+
+	.page-description {
+		padding: 8% 0;
+		margin-bottom: 13%;
 	}
 
 }
@@ -421,6 +457,10 @@ footer img {
 
 	.fact-link {
 	  padding: 1% 2%;
+	}
+
+	.facts a:hover {
+		padding: 1% 2%;
 	}
 
 }
@@ -487,13 +527,39 @@ footer img {
 		font-size: 4.5rem;
 	}
 
-  .facts,
+	h2 {
+		padding-bottom: 1%;
+	}
+
+  .fade,
+	.orca-pictures h2 {
+		padding-bottom: 2%;
+	}
+
 	.page-description {
+		padding: 5% 0;
+		margin-bottom: 10%;
+	}
+
+
+	.whale-go {
+		 padding: 1.5% 2%;
+	}
+
+	.whale-link a:hover {
+		padding: 1.5% 2%;
+	}
+
+  .facts {
 		margin-bottom: 10%;
 	}
 
 	.facts p {
 	  padding-bottom: 2.5%;
+	}
+
+	footer {
+		padding: 2.5% 0;
 	}
 
 }
@@ -516,14 +582,6 @@ footer img {
 		margin: 0 auto;
 	}
 
-	.button-go {
-		 padding: 2% 4.5%;
-	}
-
-	footer {
-		padding: 2% 0;
-	}
-
 	.image-grid {
 		padding-bottom: 10%;
 	}
@@ -532,17 +590,42 @@ footer img {
 
 /* ----------------- END 1100PX MEDIA QUERY ----------------- */
 
+/* ----------------- START 1200PX MEDIA QUERY ----------------- */
+
+@media (min-width: 1200px) {
+
+	@keyframes swim {
+	  from {
+	    transform: translateX(-600px);
+	  }
+	  to {
+	    transform: translateX(1800px);
+	  }
+	}
+
+}
+
+/* ----------------- END 1200PX MEDIA QUERY ----------------- */
+
 /* ----------------- START 1300PX MEDIA QUERY ----------------- */
 
 @media (min-width: 1300px) {
 
-	.page-description {
-		padding: 5% 0 9% 0;
-		margin-bottom: 5%;
+	header {
+		padding: 1% 0 0.5% 0;
 	}
 
 	.page-description p {
 		max-width: 1210px;
+	}
+
+	h2 {
+		padding-bottom: 0.5%;
+	}
+
+	.fade,
+	.orca-pictures h2 {
+		padding-bottom: 1%;
 	}
 
 	.facts {
@@ -557,6 +640,10 @@ footer img {
 		padding: 0.5% 1%;
 	}
 
+	.facts a:hover {
+		padding: 0.5% 1%;
+	}
+
 	.whale-types {
 	  text-align: center;
 		padding-top: 3%;
@@ -566,9 +653,39 @@ footer img {
 		padding-bottom: 1.5%;
 	}
 
+	.wade-picture,
+	.picture-random {
+		padding-bottom: 10%;
+	}
+
+	footer {
+		padding: 1.5% 0;
+	}
+
 }
 
 /* ----------------- END 1300PX MEDIA QUERY ----------------- */
+
+/* ----------------- START 1800PX MEDIA QUERY ----------------- */
+
+@media (min-width: 1800px) {
+
+	@keyframes swim {
+	  from {
+	    transform: translateX(-600px);
+	  }
+	  to {
+	    transform: translateX(2500px);
+	  }
+	}
+
+	header {
+		padding: 0.8% 0 0.3% 0;
+	}
+
+}
+
+/* ----------------- END 1800PX MEDIA QUERY ----------------- */
 
 /* ----------------- START 2000PX MEDIA QUERY ----------------- */
 
@@ -582,8 +699,9 @@ footer img {
 		font-size: 2.5rem;
 	}
 
-  .page-description {
-		padding-bottom: 5%;
+	.page-description {
+		padding: 2.5% 0;
+		margin-bottom: 7%;
 	}
 
 	.facts {
