@@ -152,27 +152,6 @@ nav img {
 
 /*===================
 *
-* Hero H1 Animation
-*
-=====================*/
-
-.ml6 {
-  position: relative;
-}
-
-.ml6 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-}
-
-.ml6 .letter {
-  display: inline-block;
-  line-height: 1em;
-}
-
-/*===================
-*
 * Page Description
 *
 =====================*/
@@ -229,6 +208,24 @@ nav img {
 	background: #d2e6ef;
 	padding: 1.8% 2.5%;
   transition: .4s;
+}
+
+/*===================
+*
+* Random Pictures
+*
+=====================*/
+
+.fade,
+.orca-pictures {
+	text-align: center;
+}
+
+.wade-picture,
+.picture-random {
+	max-width: 85%;
+	margin: 0 auto;
+	padding-bottom: 15%;
 }
 
 /*===================
@@ -364,6 +361,7 @@ footer img {
 		margin: 0 auto;
 	}
 
+
 }
 
 /* -------------------- END 600PX MEDIA QUERY ----------------------*/
@@ -399,6 +397,11 @@ footer img {
 
 	.fact-link {
 	  padding: 1.4% 2.1%;
+	}
+
+  .wade-picture,
+	.picture-random  {
+		max-width: 500px;
 	}
 
 }

@@ -1,4 +1,5 @@
-// Index H1 Animation
+// Index H2 Animation
+
 var textWrapper = document.querySelector('.ml6 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
